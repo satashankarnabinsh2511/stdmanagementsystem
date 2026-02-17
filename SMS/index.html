@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Seabird International College</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- TOP INFO -->
+<div class="top-info">
+    <span>📞 CALL US: 01-5093567 / 01-5093393</span>
+    <span>✉️ EMAIL US: info@seabird.edu.np</span>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <h2>Seabird International College</h2>
+    <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#student-life">Student Life</a></li>
+        <li><a href="#apply">Admission</a></li>
+        <li><a href="#faq">FAQ</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero" class="hero">
+    <h1>"Education for Leadership and Development"</h1>
+    <p>Seabird International College is an academic shrine for meritorious and promising students who wish to enhance their skills.</p>
+</section>
+
+<!-- CMS FEATURES (REPLACED STATS) -->
+<section class="cms-features">
+    <div class="cms-box">
+        <h3>Students</h3>
+        <p>Manage student records, attendance, and progress easily.</p>
+    </div>
+
+    <div class="cms-box">
+        <h3>Teachers</h3>
+        <p>Organize teachers, schedules, and performance tracking.</p>
+    </div>
+
+    <div class="cms-box">
+        <h3>Classes</h3>
+        <p>Create and manage classes, subjects, and timetables.</p>
+    </div>
+
+    <div class="cms-box">
+        <h3>Exams</h3>
+        <p>Schedule exams, record marks, and generate reports.</p>
+    </div>
+</section>
+
+<!-- MESSAGES -->
+<section class="content-box">
+    <h2>Message From Academic Director</h2>
+    <h4>Bijay Charan Shrestha</h4>
+    <p>Seabird International College provides a conducive academic environment with dedication and excellence.</p>
+    <a href="#student-life" class="button">READ MORE</a>
+</section>
+
+<section class="content-box">
+    <h2>Message From Act. Principal</h2>
+    <h4>Prem Keshari Bajracharya</h4>
+    <p>Seabird strives to enhance skills and competitive qualities for students’ future careers.</p>
+    <a href="#student-life" class="button">READ MORE</a>
+</section>
+
+<!-- STUDENT LIFE -->
+<section id="student-life" class="content-box">
+    <h2>Student Life at Seabird International College</h2>
+
+    <button class="collapsible">Academic Life</button>
+    <div class="content-collapsible">
+        <p>Small class sizes, interactive lectures, and modern labs. Mentorship and counseling help every student reach full potential.</p>
+    </div>
+
+    <button class="collapsible">Extracurricular Activities</button>
+    <div class="content-collapsible">
+        <p>Sports teams, debate, cultural clubs, and volunteer initiatives develop creativity and teamwork.</p>
+    </div>
+
+    <button class="collapsible">Campus Facilities</button>
+    <div class="content-collapsible">
+        <p>Well-equipped classrooms, labs, library, cafeteria, and recreational spaces support academics and growth.</p>
+    </div>
+
+    <button class="collapsible">Community & Support</button>
+    <div class="content-collapsible">
+        <p>Engagement with peers, faculty, and community develops leadership and interpersonal skills.</p>
+    </div>
+</section>
+
+<!-- APPLY -->
+<section id="apply" class="apply">
+    <h2>Apply For Admission</h2>
+    <a href="#hero" class="button">APPLY ONLINE</a>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="content-box">
+    <h2>Frequently Asked Questions</h2>
+    <ul class="faq">
+        <li>
+            <button class="faq-question">Difference between a college and a university?</button>
+            <div class="faq-answer">College focuses on undergraduate studies while universities offer both undergraduate and graduate programs.</div>
+        </li>
+        <li>
+            <button class="faq-question">Are there age limitations for T.U universities?</button>
+            <div class="faq-answer">T.U. generally does not have strict age limits, but some programs may vary.</div>
+        </li>
+        <li>
+            <button class="faq-question">What are undergraduate and graduate degrees?</button>
+            <div class="faq-answer">Undergraduate degrees are the first level (BA, BSc), graduate degrees are advanced (MA, MSc, MBA, PhD).</div>
+        </li>
+        <li>
+            <button class="faq-question">Types of undergraduate and graduate degrees?</button>
+            <div class="faq-answer">Undergraduate: BA, BSc, BBA; Graduate: MA, MSc, MBA, PhD.</div>
+        </li>
+    </ul>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>📍 Madhyapur Thimi, Shankhadhar Chowk, Bhaktapur</p>
+    <p>📞 01-5093567 / 01-5093393 | ✉️ info@seabird.edu.np</p>
+    <p>🌐 Facebook | Twitter | YouTube</p>
+    <p>© 2026 Seabird International College. All rights reserved.</p>
+    <p class="credits">
+        Project done by <a href="#">Amrit Thapa Magar</a> and <a href="#">Nabinsh Satasankhar</a>
+    </p>
+</footer>
+
+<script>
+document.querySelectorAll(".faq-question").forEach(button => {
+    button.addEventListener("click", () => {
+        const answer = button.nextElementSibling;
+        answer.style.display = answer.style.display === "block" ? "none" : "block";
+    });
+});
+
+document.querySelectorAll(".collapsible").forEach(btn => {
+    btn.addEventListener("click", () => {
+        btn.classList.toggle("active");
+        const content = btn.nextElementSibling;
+        content.style.display = content.style.display === "block" ? "none" : "block";
+    });
+});
+</script>
+
+</body>
+</html>
